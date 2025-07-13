@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rukshana | Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+  <div class="navbar-container">
+    <div class="logo">
+      Rukshana
+    </div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-container">
+      <div class="hero-left">
+        <p class="greeting">Hi ! there👋...</p>
+        <h1>I'm Rukshana</h1>
+        <p class="subtitle">
+         Web Developer & Tech Enthusiast
+        </p>
+        <a href="#about" class="btn-primary">More About Me</a>
+      </div>
+      <div class="hero-right">
+  <img src="../assets/portfolio.jpg" alt="Profile Photo" class="hero-img" />
+</div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h1>About Me</h1>
+    <p>
+      I'm a passionate Computer Science student specializing in full-stack development.
+    </p>
+    <ul>
+      <li>📍 Based in India</li>
+      <li>💻 Languages: Python, Java, C++</li>
+      <li>🌐 Tools: VS Code, GitHub, MongoDB</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h1>Projects</h1>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Attendance Tracker</h3>
+        <p>Web app for school attendance using Python & Django.</p>
+        <a href="#">View Project →</a>
+      </div>
+      <div class="project-card">
+        <h3>Wheeze Detector</h3>
+        <p>Wearable device for children using ESP32 and sensors.</p>
+        <a href="#">View Project →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h1>Contact Me</h1>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+      <p id="form-status"></p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer style="text-align:center; padding:1rem; background:#111; color:#fff;">
+    &copy; 2025 Rukshana. All rights reserved.
+  </footer>
+
+  <script src="../js/contactme.js"></script>
+</body>
+</html>
