@@ -4,20 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Me | Rukshana Portfolio</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Navbar -->
   <header>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contactme.html">Contact</a>
-    </nav>
+    <div class="navbar">
+      <div class="navbar-container">
+        <div class="logo">Portfolio</div>
+        <div class="nav-links">
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contactme.html">Contact</a>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <section class="contact">
-    <h1>Contact Me</h1>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+  <h1>Contact Me</h1>
     <form id="contact-form">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required />
@@ -31,8 +37,18 @@
       <button type="submit">Send Message</button>
       <p id="form-status"></p>
     </form>
+
+    <!-- Social Logos -->
+    <div class="social-links">
+      <a href="https://github.com/Rukshana-S" target="_blank">
+        <img src="assets/github.png" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/rukshana-s" target="_blank">
+        <img src="assets/linkedin.png" alt="LinkedIn" />
+      </a>
+    </div>
   </section>
 
-  <script src="../js/contactme.js"></script>
+  <script src="js/contactme.js"></script>
 </body>
 </html>
